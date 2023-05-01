@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 
 import Login from "./pages/Login";
+import Registration from "./pages/Registration";
 import Dashboard from "./pages/admin/Dashboard";
 import Home from "./pages/user/Home";
 import Navbar from "./components/Navbar";
@@ -51,6 +52,10 @@ const router = createBrowserRouter([
     element: <Login />,
   },
   {
+    path: "/registration",
+    element: <Registration />,
+  },
+  {
     path: "/dashboard",
     element: <Dashboard />,
   },
@@ -59,9 +64,7 @@ const router = createBrowserRouter([
 function App() {
   return (
     <div className="app">
-      <div className="container">
-        <RouterProvider router={router} />
-      </div>
+      <RouterProvider router={router} />
     </div>
   );
 }

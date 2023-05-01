@@ -1,0 +1,54 @@
+header {
+  nav {
+    display: flex;
+    &.container {
+      &.navbar-small {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 0.875rem;
+        color: #74747c;
+        margin: 8px auto;
+
+        ul {
+          display: flex;
+
+          li {
+            display: block;
+            padding: 8px 16px;
+
+            &:not(.social, .divider) {
+              &:hover {
+                color: $secondary-color;
+              }
+            }
+
+            &.social {
+              &.facebook:hover {
+                background-color: blue;
+              }
+              &.instagram:hover {
+                background-color: red;
+              }
+              &.whatsapp:hover {
+                background-color: greenyellow;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .navbar-small {
+    }
+
+    .navbar-large {
+    }
+
+    .menu-toggle {
+    }
+
+    .navbar-menu {
+    }
+  }
+}

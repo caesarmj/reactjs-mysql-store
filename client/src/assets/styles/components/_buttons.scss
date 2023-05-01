@@ -10,6 +10,7 @@
   transition: all 0.3s ease;
 
   &-primary {
+    border: 1px solid $button-primary-bg-color;
     background-color: $button-primary-bg-color;
     color: $button-primary-text-color;
 
@@ -19,11 +20,22 @@
   }
 
   &-secondary {
+    border: 1px solid $button-secondary-bg-color;
     background-color: $button-secondary-bg-color;
     color: $button-secondary-text-color;
 
     &:hover {
       background-color: mix(black, $button-secondary-bg-color, 20%);
+    }
+  }
+
+  &-outline {
+    border: 1px solid $button-outline-text-color;
+    background-color: $button-outline-bg-color;
+    color: $button-outline-text-color;
+
+    &:hover {
+      background-color: mix(black, $button-outline-bg-color, 20%);
     }
   }
 }

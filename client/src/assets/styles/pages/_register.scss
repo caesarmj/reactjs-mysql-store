@@ -1,10 +1,10 @@
-.login-wrapper {
+.register-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 100vh;
 
-  .login-left {
+  .register-left {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -18,20 +18,20 @@
     p {
       color: white;
       text-align: center;
-      font-size: 0.875rem;
+      font-size: .875rem;
       margin-top: 20px;
     }
   }
 
-  .login-right {
+  .register-right {
     display: flex;
     flex: 1;
     flex-direction: column;
     align-items: center;
     margin-top: 30px;
 
-    .logo-background {
-      background-color: #ffddd3;
+    .logo-background{
+      background-color: #FFDDD3;
       border-radius: 50%;
       display: flex;
       justify-content: center;
@@ -98,7 +98,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        font-size: 0.8125rem;
+        font-size: .8125rem;
         color: $font-color-secondary;
         margin-top: 8px;
         margin-bottom: 48px;
@@ -110,8 +110,8 @@
       }
     }
 
-    .register {
-      margin-top: 16%;
+    .login-link-wrapper {
+      margin-top: 3%;
 
       .register-link {
         color: $font-color;

@@ -1,7 +1,10 @@
-//MAIN COLOR VARIABLES
+//MAIN COLOR VARIABLES 60-30-10 RULES
 $primary-color: #ffffff;
 $secondary-color: #171725;
 $accent-color: #FD5722;
+$danger-color:#dc3545;
+$warning-color: #ffc107;
+$success-color: #28a745;
 
 //BUTTON VARIABLES
 $button-border-radius: 4px;
@@ -11,6 +14,8 @@ $button-primary-bg-color: $accent-color;
 $button-primary-text-color: #fff;
 $button-secondary-bg-color: #6c757d;
 $button-secondary-text-color: #fff;
+$button-outline-bg-color: transparent;
+$button-outline-text-color: $secondary-color;
 
 //TYPOGRAPHY VARIABLES
 $base-font-size: 1rem;
