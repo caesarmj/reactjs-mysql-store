@@ -1,0 +1,125 @@
+.login-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+
+  .login-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    background-color: $accent-color;
+    overflow: hidden;
+
+    p {
+      color: white;
+      text-align: center;
+      font-size: .875rem;
+      margin-top: 20px;
+    }
+  }
+
+  .login-right {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+
+    .logo-background{
+      background-color: #FFDDD3;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .logo {
+        height: auto;
+        width: 50px;
+        padding: 10px;
+      }
+    }
+
+    h2 {
+      font-weight: 700;
+    }
+
+    p {
+      text-align: center;
+      color: $font-color-secondary;
+    }
+
+    .form-container {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      gap: 8px;
+      margin-bottom: 1rem;
+
+      .input {
+        width: 100%;
+        height: 36px;
+        background-color: #05060f0a;
+        border-radius: 0.5rem;
+        padding: 0 1rem;
+        border: 2px solid transparent;
+        font-size: 1rem;
+        transition: border-color 0.3s cubic-bezier(0.25, 0.01, 0.25, 1) 0s,
+          color 0.3s cubic-bezier(0.25, 0.01, 0.25, 1) 0s,
+          background 0.2s cubic-bezier(0.25, 0.01, 0.25, 1) 0s;
+      }
+
+      .label {
+        display: block;
+        margin-bottom: 0.3rem;
+        font-size: 0.9rem;
+        font-weight: bold;
+        color: $secondary-color;
+        transition: color 0.3s cubic-bezier(0.25, 0.01, 0.25, 1) 0s;
+      }
+
+      .input:hover,
+      .input:focus,
+      .input-group:hover .input {
+        outline: none;
+        border-color: $secondary-color;
+      }
+
+      .input-group:hover .label,
+      .input:focus {
+        color: $secondary-color;
+      }
+
+      .input-group-small {
+        display: flex;
+        justify-content: space-between;
+        font-size: .8125rem;
+        color: $font-color-secondary;
+        margin-top: 8px;
+        margin-bottom: 48px;
+
+        a:hover {
+          color: $font-color;
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .register {
+      margin-top: 70px;
+
+      .register-link {
+        color: $font-color;
+        font-weight: 700;
+
+        &:hover {
+          border-bottom: 2px solid $secondary-color;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.btn {
+  display: inline-block;
+  border: none;
+  border-radius: $button-border-radius;
+  font-size: $button-font-size;
+  padding: $button-padding;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+
+  &-primary {
+    background-color: $button-primary-bg-color;
+    color: $button-primary-text-color;
+
+    &:hover {
+      background-color: mix(black, $button-primary-bg-color, 20%);
+    }
+  }
+
+  &-secondary {
+    background-color: $button-secondary-bg-color;
+    color: $button-secondary-text-color;
+
+    &:hover {
+      background-color: mix(black, $button-secondary-bg-color, 20%);
+    }
+  }
+}

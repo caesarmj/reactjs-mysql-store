@@ -1,0 +1,65 @@
+/* Box sizing rules */
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+  
+/* Remove default padding */
+body,
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+dl, dd, ol, ul,
+figure,
+fieldset, legend {
+    margin: 0;
+    padding: 0;
+}
+  
+/* Remove list styles on ul, ol elements */
+ul, ol {
+    list-style: none;
+}
+  
+/* Set core body defaults */
+body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+  
+  /* Remove text-decoration on links */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+  
+  /* Reset images and other media */
+img,
+video,
+svg,
+canvas,
+audio {
+    display: block;
+    vertical-align: middle;
+}
+  
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+      scroll-behavior: auto;
+    }
+    
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+}
+  
