@@ -1,8 +1,1 @@
-# react-mysql-ecommerce-website
-Under Construction ⚙️
-
-Ecommerce Website Using :
-- MySQL Database
-- React
-- Sass
-- Node.JS
+Online store website using MySQL, React JS, Express, and Node.JS
