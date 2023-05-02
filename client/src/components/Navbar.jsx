@@ -1,4 +1,11 @@
 import { Link } from "react-router-dom";
+import { ReactComponent as Phone } from "../assets/images/phone.svg";
+import { ReactComponent as Menu } from "../assets/images/menu.svg";
+import Logo from "../assets/images/logo-50.webp";
+import { ReactComponent as User } from "../assets/images/user.svg";
+import { ReactComponent as Heart } from "../assets/images/heart.svg";
+import { ReactComponent as Search } from "../assets/images/search.svg";
+import { ReactComponent as Cart } from "../assets/images/shopping-bag.svg";
 
 const Navbar = () => {
   return (
@@ -7,13 +14,13 @@ const Navbar = () => {
         <p>Dapatkan Diskon Menarik dan Promo Spesial Hanya di Sini!</p>
         <ul>
           <li>
-            <Link to="">Masuk</Link>
+            <Link to="/login">Masuk</Link>
           </li>
           <li>
-            <Link to="">Registrasi</Link>
+            <Link to="/registration">Registrasi</Link>
           </li>
           <li>
-            <Link to="">Kontak Kami</Link>
+            <Link to="/contact-us">Kontak Kami</Link>
           </li>
           <li className="divider">|</li>
           <li className="social facebook">
@@ -27,17 +34,44 @@ const Navbar = () => {
           </li>
         </ul>
       </nav>
-      <nav className="container navbar-large"></nav>
-      <button className="container menu-toggle">Button</button>
-      <nav className="container navbar-menu"></nav>
-      <div className="container">
-        <div className="logo">Logo</div>
-        <div className="links">
-          <Link to="/link1">
-            <h6>Link</h6>
-          </Link>
+      <nav className="container navbar-large">
+        <div className="call-wrapper">
+          <Phone className="call-logo" />
+          <div className="call-info">
+            <h6>Call Us</h6>
+            <p>+62 123 456 789</p>
+          </div>
         </div>
-      </div>
+        <button className="container menu-toggle">
+          <Menu className="menu-icon" />
+        </button>
+        <div className="logo-wrapper">
+          <img src={Logo} alt="" />
+          <h6 className="container menu-heading">JOGJA ELECTRIK</h6>
+        </div>
+        <ul className="navbar-large-menu">
+          <li>
+            <User />
+          </li>
+          <li>
+            <Heart />
+          </li>
+          <li>
+            <Search />
+          </li>
+          <li>
+            <Cart />
+          </li>
+        </ul>
+      </nav>
+      <nav className="container navbar-menu">
+        <ul>
+          <li>Menu</li>
+          <li>Menu</li>
+          <li>Menu</li>
+          <li>Menu</li>
+        </ul>
+      </nav>
     </header>
   );
 };

@@ -3,12 +3,10 @@ header {
     display: flex;
     &.container {
       &.navbar-small {
-        display: flex;
         justify-content: space-between;
         align-items: center;
         font-size: 0.875rem;
         color: #74747c;
-        margin: 8px auto;
 
         ul {
           display: flex;
@@ -24,6 +22,9 @@ header {
             }
 
             &.social {
+              padding: 8px 12px;
+              border-radius: 50%;
+
               &.facebook:hover {
                 background-color: blue;
               }
@@ -37,18 +38,125 @@ header {
           }
         }
       }
+      &.navbar-large {
+        justify-content: space-between;
+        align-items: center;
+
+        .call-wrapper {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+
+          .call-logo {
+            width: 1.75rem;
+            height: auto;
+          }
+
+          &:hover {
+            background-color: greenyellow;
+            border-radius: 30px;
+          }
+        }
+
+        .logo-wrapper {
+          display: flex;
+          align-items: center;
+
+          img {
+            height: auto;
+            width: 50px;
+          }
+
+          .menu-heading {
+            font-weight: 800;
+            display: none;
+          }
+        }
+
+        .navbar-large-menu {
+          display: flex;
+          gap: 1.45rem;
+
+          li {
+            cursor: pointer;
+          }
+        }
+      }
+
+      &.navbar-menu {
+        ul {
+          display: flex;
+          justify-content: space-between;
+          gap: 2rem;
+        }
+      }
+    }
+  }
+
+  .menu-toggle {
+    background: none;
+    display: flex;
+    border: none;
+    padding: 0;
+    display: none;
+    .menu-icon {
+      width: 24px;
+      height: 24px;
+      display: block;
+      margin: auto;
     }
 
-    .navbar-small {
+    &:hover {
+      background-color: red;
     }
+  }
 
-    .navbar-large {
+  @media only screen and ($breakpoint-md) {
+    nav {
+      display: flex;
+      &.container.navbar-small {
+        justify-content: flex-end;
+        p {
+          display: none;
+        }
+        ul li:not(.social) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  @media only screen and ($breakpoint-sm) {
+    nav {
+      &.container {
+        &.navbar-large {
+          justify-content: flex-start;
+          gap: 1rem;
+
+          .call-wrapper {
+            display: none;
+          }
+
+          .logo-wrapper {
+            img {
+              width: 30px;
+              height: auto;
+            }
+
+            .menu-heading {
+              display: block;
+            }
+          }
+
+          .navbar-large-menu {
+            margin-left: auto;
+          }
+        }
+      }
     }
 
     .menu-toggle {
-    }
-
-    .navbar-menu {
+      display: block;
     }
   }
 }
