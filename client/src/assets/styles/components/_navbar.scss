@@ -1,162 +1,92 @@
 header {
-  nav {
+  nav.container {
     display: flex;
-    &.container {
-      &.navbar-small {
-        justify-content: space-between;
-        align-items: center;
-        font-size: 0.875rem;
-        color: #74747c;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 
-        ul {
-          display: flex;
+    a.logo {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
 
-          li {
-            display: block;
-            padding: 8px 16px;
-
-            &:not(.social, .divider) {
-              &:hover {
-                color: $secondary-color;
-              }
-            }
-
-            &.social {
-              padding: 8px 12px;
-              border-radius: 50%;
-
-              &.facebook:hover {
-                background-color: blue;
-              }
-              &.instagram:hover {
-                background-color: red;
-              }
-              &.whatsapp:hover {
-                background-color: greenyellow;
-              }
-            }
-          }
-        }
-      }
-      &.navbar-large {
-        justify-content: space-between;
-        align-items: center;
-
-        .call-wrapper {
-          display: flex;
-          align-items: center;
-          gap: 1rem;
-
-          .call-logo {
-            width: 1.75rem;
-            height: auto;
-          }
-
-          &:hover {
-            background-color: greenyellow;
-            border-radius: 30px;
-          }
-        }
-
-        .logo-wrapper {
-          display: flex;
-          align-items: center;
-
-          img {
-            height: auto;
-            width: 50px;
-          }
-
-          .menu-heading {
-            font-weight: 800;
-            display: none;
-          }
-        }
-
-        .navbar-large-menu {
-          display: flex;
-          gap: 1.45rem;
-
-          li {
-            cursor: pointer;
-          }
-        }
+      img {
+        height: auto;
+        width: 35px;
       }
 
-      &.navbar-menu {
-        ul {
-          display: flex;
-          justify-content: space-between;
-          gap: 2rem;
-        }
+      h4 {
+        font-weight: 900;
       }
     }
-  }
 
-  .menu-toggle {
-    background: none;
-    display: flex;
-    border: none;
-    padding: 0;
-    display: none;
-    .menu-icon {
-      width: 24px;
-      height: 24px;
-      display: block;
-      margin: auto;
+    ul.links {
+      display: flex;
+      gap: 2rem;
     }
 
-    &:hover {
-      background-color: red;
+    ul.user-menu {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+
+      li.menu-toggle {
+        display: none;
+        margin-top: 0.5rem;
+        button {
+          background-color: transparent;
+          border: none;
+        }
+      }
     }
   }
 
   @media only screen and ($breakpoint-md) {
-    nav {
-      display: flex;
-      &.container.navbar-small {
-        justify-content: flex-end;
-        p {
-          display: none;
-        }
-        ul li:not(.social) {
-          display: none;
-        }
+    nav.container {
+      ul.links {
+        display: none;
+      }
+
+      ul.user-menu li.authentication {
+        display: none;
+      }
+
+      ul.user-menu li.menu-toggle {
+        display: block;
       }
     }
   }
 
   @media only screen and ($breakpoint-sm) {
-    nav {
-      &.container {
-        &.navbar-large {
-          justify-content: flex-start;
-          gap: 1rem;
+    nav.container {
+      ul.links {
+        display: none;
+      }
 
-          .call-wrapper {
-            display: none;
-          }
+      ul.user-menu li.authentication {
+        display: none;
+      }
 
-          .logo-wrapper {
-            img {
-              width: 30px;
-              height: auto;
-            }
-
-            .menu-heading {
-              display: block;
-            }
-          }
-
-          .navbar-large-menu {
-            margin-left: auto;
-          }
-        }
+      ul.user-menu li.menu-toggle {
+        display: block;
       }
     }
+  }
 
-    .menu-toggle {
-      display: block;
+  @media only screen and ($breakpoint-xs) {
+    nav.container {
+      ul.links {
+        display: none;
+      }
+
+      ul.user-menu li.authentication {
+        display: none;
+      }
+
+      ul.user-menu li.menu-toggle {
+        display: block;
+      }
     }
   }
 }

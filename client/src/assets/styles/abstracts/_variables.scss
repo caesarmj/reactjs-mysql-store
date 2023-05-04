@@ -1,20 +1,21 @@
 //MAIN COLOR VARIABLES 60-30-10 RULES
 $primary-color: #ffffff;
-$secondary-color: #171725;
+$secondary-color: #252525;
 $accent-color: #fd5722;
 $danger-color: #dc3545;
 $warning-color: #ffc107;
 $success-color: #28a745;
 
 //BUTTON VARIABLES
-$button-border-radius: 4px;
+$button-border-radius: 0.5rem;
 $button-font-size: 1rem;
-$button-padding: 0.5rem 1rem;
+$button-padding: 0.4rem 1.75rem;
 $button-primary-bg-color: $accent-color;
 $button-primary-text-color: #fff;
 $button-secondary-bg-color: #6c757d;
 $button-secondary-text-color: #fff;
-$button-outline-bg-color: transparent;
+$button-outline-bg-color: $primary-color;
+$button-outline-color: $secondary-color;
 $button-outline-text-color: $secondary-color;
 
 //TYPOGRAPHY VARIABLES
@@ -25,7 +26,7 @@ $font-color-secondary: #868891;
 
 //MIXINS VARIABLES
 $breakpoint-xs: "max-width: 575.98px";
-$breakpoint-sm: "max-width: 767.98px";
+$breakpoint-sm: "(min-width: 576px) and (max-width: 767.98px)";
 $breakpoint-md: "(min-width: 768px) and (max-width: 991.98px)";
 $breakpoint-lg: "(min-width: 992px) and (max-width: 1199.98px)";
 $breakpoint-xl: "(min-width: 1200px) and (max-width: 1399.98px)";

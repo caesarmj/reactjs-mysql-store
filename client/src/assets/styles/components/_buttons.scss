@@ -7,7 +7,7 @@
   cursor: pointer;
   text-align: center;
   text-decoration: none;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease-in;
 
   &-primary {
     border: 1px solid $button-primary-bg-color;
@@ -30,12 +30,18 @@
   }
 
   &-outline {
-    border: 1px solid $button-outline-text-color;
     background-color: $button-outline-bg-color;
+    border: 1px solid $button-outline-color;
     color: $button-outline-text-color;
 
     &:hover {
-      background-color: mix(black, $button-outline-bg-color, 20%);
+      background-color: $button-outline-color;
+      color: $primary-color;
+    }
+
+    &:is(:active, :focus) {
+      outline: 2px solid $button-outline-color;
+      outline-offset: 2px;
     }
   }
 }
