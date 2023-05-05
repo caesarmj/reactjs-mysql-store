@@ -24,12 +24,14 @@ header {
     ul.links {
       display: flex;
       gap: 2rem;
+      font-weight: 600;
     }
 
     ul.user-menu {
       display: flex;
       align-items: center;
       gap: 1.5rem;
+      font-weight: 600;
 
       li.menu-toggle {
         display: none;
