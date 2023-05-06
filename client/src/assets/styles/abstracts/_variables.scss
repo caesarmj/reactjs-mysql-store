@@ -1,6 +1,6 @@
 //MAIN COLOR VARIABLES 60-30-10 RULES
 $primary-color: #ffffff;
-$secondary-color: #252525;
+$secondary-color: #1d2132;
 $accent-color: #fd5722;
 $danger-color: #dc3545;
 $warning-color: #ffc107;
@@ -12,7 +12,7 @@ $button-font-size: 1rem;
 $button-padding: 0.4rem 1.75rem;
 $button-primary-bg-color: $accent-color;
 $button-primary-text-color: #fff;
-$button-secondary-bg-color: #6c757d;
+$button-secondary-bg-color: $secondary-color;
 $button-secondary-text-color: #fff;
 $button-outline-bg-color: $primary-color;
 $button-outline-color: $secondary-color;
@@ -21,8 +21,8 @@ $button-outline-text-color: $secondary-color;
 //TYPOGRAPHY VARIABLES
 $base-font-size: 1rem;
 $base-line-height: 1.5;
-$font-color: $secondary-color;
-$font-color-secondary: #868891;
+$font-color-base: $secondary-color;
+$font-color-secondary: #777a84;
 
 //MIXINS VARIABLES
 $breakpoint-xs: "max-width: 575.98px";

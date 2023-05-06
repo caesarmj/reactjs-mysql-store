@@ -104,7 +104,7 @@
         margin-bottom: 48px;
 
         a:hover {
-          color: $font-color;
+          color: $font-color-base;
           text-decoration: underline;
         }
       }
@@ -114,7 +114,7 @@
       margin-top: 16%;
 
       .register-link {
-        color: $font-color;
+        color: $font-color-base;
         font-weight: 700;
 
         &:hover {

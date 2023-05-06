@@ -4,10 +4,10 @@ main {
     position: relative;
     justify-content: center;
     align-items: center;
-    height: 85vh;
+    height: 70vh;
     max-width: 95.3vw;
     overflow: hidden;
-    margin: 0 30px 50px 30px;
+    margin: 0 30px 35px 30px;
     border-radius: 20px;
 
     .hero-content {
@@ -35,7 +35,7 @@ main {
         padding: 1rem 2rem;
         font-size: 1rem;
         cursor: pointer;
-        transition: all 0.3s ease-in-out;
+        transition: all 0.2s ease-out;
       }
 
       a:hover {
@@ -54,12 +54,25 @@ main {
     }
   }
 
-  section.container.categories {
-    margin-bottom: 50px;
-
+  section.container {
     .section-header {
-      margin-bottom: 50px;
+      position: relative;
+      margin-bottom: 35px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        width: 36px;
+        height: 3px;
+        background-color: $secondary-color;
+        margin-left: 1rem;
+      }
     }
+  }
+
+  section.container.categories {
+    margin-bottom: 35px;
 
     .category-wrapper {
       display: flex;
@@ -67,15 +80,22 @@ main {
       gap: 2%;
 
       .category-card {
+        display: flex;
         position: relative;
         width: 33%;
         height: auto;
+        border-radius: 20px;
+        overflow: hidden;
+        transition: all 0.2s ease-out;
+
+        &:hover {
+          box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+        }
 
         img {
           height: auto;
           width: 100%;
           object-fit: cover;
-          border-radius: 20px;
         }
 
         .category-content {
@@ -106,13 +126,38 @@ main {
       .promo-card {
         display: flex;
         justify-content: center;
+        color: $secondary-color;
+        transition: all 0.2s ease-out;
         align-items: center;
-        background-color: orange;
+        background: linear-gradient(to bottom right, #f5a623, #fd5722);
         width: 33%;
         border-radius: 20px;
 
+        &:hover {
+          box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+        }
+
         .promo-content {
+          max-width: 80%;
           text-align: center;
+
+          .promo-icon,
+          h3,
+          p {
+            margin-bottom: 1rem;
+          }
+
+          .promo-icon {
+            text-align: center;
+            margin-bottom: 1rem;
+
+            span {
+              display: inline-block;
+              background-color: rgba(255, 255, 255, 0.5);
+              padding: 0.5rem;
+              border-radius: 50%;
+            }
+          }
         }
       }
     }

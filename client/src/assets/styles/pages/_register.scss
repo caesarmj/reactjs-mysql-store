@@ -18,7 +18,7 @@
     p {
       color: white;
       text-align: center;
-      font-size: .875rem;
+      font-size: 0.875rem;
       margin-top: 20px;
     }
   }
@@ -30,8 +30,8 @@
     align-items: center;
     margin-top: 30px;
 
-    .logo-background{
-      background-color: #FFDDD3;
+    .logo-background {
+      background-color: #ffddd3;
       border-radius: 50%;
       display: flex;
       justify-content: center;
@@ -98,13 +98,13 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        font-size: .8125rem;
+        font-size: 0.8125rem;
         color: $font-color-secondary;
         margin-top: 8px;
         margin-bottom: 48px;
 
         a:hover {
-          color: $font-color;
+          color: $font-color-base;
           text-decoration: underline;
         }
       }
@@ -114,7 +114,7 @@
       margin-top: 3%;
 
       .register-link {
-        color: $font-color;
+        color: $font-color-base;
         font-weight: 700;
 
         &:hover {

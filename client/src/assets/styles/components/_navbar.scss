@@ -24,7 +24,12 @@ header {
     ul.links {
       display: flex;
       gap: 2rem;
-      font-weight: 600;
+      font-weight: 500;
+      color: $font-color-secondary;
+
+      li:hover {
+        color: $font-color-base;
+      }
     }
 
     ul.user-menu {
