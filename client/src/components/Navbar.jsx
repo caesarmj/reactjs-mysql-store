@@ -24,6 +24,9 @@ const Navbar = () => {
           <li>
             <a href="/categories">Kategori</a>
           </li>
+          <li>
+            <a href="#">Bantuan</a>
+          </li>
         </ul>
         <ul className="user-menu">
           <li>
